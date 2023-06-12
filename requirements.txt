@@ -2,3 +2,5 @@ Flask
 gunicorn
 pandas
 sklearn
+numpy
+-e .

@@ -1,5 +1,6 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
+
 
 
 def get_requirements_list() -> List[str]:
@@ -16,11 +17,11 @@ def get_requirements_list() -> List[str]:
 
 setup(
     name="housing-predictor",
-    version="0.0.1",
+    version="0.0.4",
     author="hy",
     description="This is the first End to End pipline ML project",
-    packages=["housing"],
-    install_requires=get_requirements_list()
+    packages=find_packages(),
+    install_requires=get_requirements_list().remove("-e .")
 )
 
 if __name__ == "__main__":

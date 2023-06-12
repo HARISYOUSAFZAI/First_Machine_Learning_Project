@@ -32,3 +32,7 @@ docker build -t <image_name>:<tagname> .
 Python libraries installation command
 \
 python setup.py install
+or 
+pip install requirement.txt
+
+Note: -e . has been added in the requirement.txt because it will install the package which is housing (setup.py)
