@@ -26,3 +26,9 @@ Build docker image
 
 docker build -t <image_name>:<tagname> .
 >Note: Image name for docker must be lowercase.
+
+
+**Python Libraries**
+Python libraries installation command
+\
+python setup.py install
