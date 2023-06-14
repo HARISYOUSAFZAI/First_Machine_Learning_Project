@@ -36,3 +36,9 @@ or
 pip install requirement.txt
 
 Note: -e . has been added in the requirement.txt because it will install the package which is housing (setup.py)
+
+**Working on different packages**
+
+1. Logger
+2. Exception
+3. 
