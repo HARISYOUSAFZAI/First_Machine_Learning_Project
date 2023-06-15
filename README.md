@@ -30,35 +30,9 @@ docker build -t <image_name>:<tagname> .
 
 **Python Libraries**
 Python libraries installation command
-
+\
 python setup.py install
 or 
 pip install requirement.txt
 
 Note: -e . has been added in the requirement.txt because it will install the package which is housing (setup.py)
-
-**Working on Different Packagges**
-
-
-1. Logger
-2. Exception
-3. Entity (Table)
-
-
-
-***Steps of the ML project***
-
-1. **Data Ingestion:** Bring data into System and split dataset into two parts (train and test dataset)
-
-2. **Data validation:** Data range imbalanced Dataset, Outliers, Duplicate data, 
-                Schema Validation, Null check, Domain value, Anomalies (**Jupyter**)  
-
-3. **Data Transformation:** Performing EDA to understanding data (**Jupyter**)
-   (saving an object into a file is called serialization & loading object from file is called as deserialization)(Pickle Objecti of feature engineering )
-4. **Model Training:** Model Selection (Model Evaluation)
-                Hyperparameter tuning (Pickle Object of Model Training)
-5. **Model Comparison:** Comparison with best model and minimum expectation 
-
-6. **Models Evaluation:** Test dataset for model Evaluation 
-
-Real World datset >> Pickle object of feature engineering (transform function) >> Transfored dataset >> Pickle Object of Model Training>> Predict Function >> Prediction 
