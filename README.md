@@ -37,14 +37,14 @@ pip install requirement.txt
 
 Note: -e . has been added in the requirement.txt because it will install the package which is housing (setup.py)
 
-**Working on Different Packagges**
-
+**Working on Different Packages**
 
 1. Logger
 2. Exception
-3. Entity (Table)
-
-
+3. Components (data_ingestion.py, data_validation.py,etc .. )
+4. pipeline (pipline.py) (the blocks inside the components are called pipeline)
+5. Entity (Table or any data or object generated during ML experiment because of pipline it is also called artefact)
+6. Config (To perform or initiate some task we need some inputs it is called confiugration, it can be DataingestionConfig etc )
 
 ***Steps of the ML project***
 
@@ -69,3 +69,7 @@ Real World dataset >> Pickle object of feature engineering (transform function) 
 (CI:Continuous integration + CD: Continuous Deployment)
 
 **MLOps:** DAta Versioning (CT:continuous training)
+
+
+**Data Versioning:** based on timestamp and hash file.
+
