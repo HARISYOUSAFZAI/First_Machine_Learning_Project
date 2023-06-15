@@ -61,4 +61,11 @@ Note: -e . has been added in the requirement.txt because it will install the pac
 
 6. **Models Evaluation:** Test dataset for model Evaluation 
 
-Real World datset >> Pickle object of feature engineering (transform function) >> Transfored dataset >> Pickle Object of Model Training>> Predict Function >> Prediction 
+Real World dataset >> Pickle object of feature engineering (transform function) >> Transfored dataset >> Pickle Object of Model Training>> Predict Function >> Prediction 
+
+**MLOps >> DevOps**
+
+**DEVOps:** (Code Versioning and DevOps is the combination of cultureal philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velcity  )
+(CI:Continuous integration + CD: Continuous Deployment)
+
+**MLOps:** DAta Versioning (CT:continuous training)
