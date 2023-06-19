@@ -21,6 +21,8 @@ ModelTrainerConfig = namedtuple("ModelTrainerConfig", ["trained_model_file_path"
 # trained_model_file_path (save the trained model which has high accuracy in the form of pickle)
 # base_accuracy (the base accuracy matrix will save here)
 
-ModelEvaluationConfig = namedtuple("ModelEvaluationConfig", ["model_evaluation_file_path", "time_stamp"])
+ModelEvaluationConfig = namedtuple("ModelEvaluationConfig", ["model_evaluation_file_path", 'time_stamp'])
 
-ModelPusherConfig = namedtuple("ModelPusherConfig",["export_dir_path"])
+ModelPusherConfig = namedtuple("ModelPusherConfig", ["export_dir_path"])
+
+TrainingPipelineConfig = namedtuple("TrainingPipelineConfig", ["artifact_dir"])
