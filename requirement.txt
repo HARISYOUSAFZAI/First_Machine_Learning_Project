@@ -4,6 +4,7 @@ pandas
 sklearn
 numpy
 sklearn
+scikit-learn
 PyYAML
 six
 -e .

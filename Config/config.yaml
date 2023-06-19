@@ -3,7 +3,7 @@ training_pipeline_config:
   artifact_dir: artifact
 
 data_ingestion_config:
-  dataset_download_url: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing
+  dataset_download_url: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
   tgz_download_dir: tgz_sata
   ingested_dir: ingested_data
   raw_data_dir: row_data
