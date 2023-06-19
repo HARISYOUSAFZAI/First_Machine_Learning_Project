@@ -5,4 +5,5 @@ sklearn
 numpy
 sklearn
 PyYAML
+six
 -e .

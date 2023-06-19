@@ -15,7 +15,7 @@ data_validation_config:
 
 data_transformation_config:
   add_bedroom_per_room: true
-  transform_train_dir: train
+  transformed_train_dir: train
   transformed_dir: transformed_data
   transformed_test_dir: test
   preprocessed_dir: preprocessed
@@ -26,5 +26,5 @@ model_trainer_config:
   model_file_name: model.pkl
   base_accuracy: 0.6
 
-model_pusher)config:
+model_pusher_config:
   model_export_dir: saved_models
