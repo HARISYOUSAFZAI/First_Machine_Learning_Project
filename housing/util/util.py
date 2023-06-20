@@ -3,6 +3,7 @@ from housing.exception import HousingException
 import sys, os
 
 
+
 def read_yaml_file(file_path: str) -> dict:
     """
     Read a  YAML file and return the contents as a dictionary

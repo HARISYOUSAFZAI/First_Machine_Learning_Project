@@ -6,5 +6,6 @@ numpy
 sklearn
 scikit-learn
 PyYAML
+matplotlib
 six
 -e .
