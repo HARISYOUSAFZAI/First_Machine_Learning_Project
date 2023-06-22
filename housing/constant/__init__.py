@@ -25,6 +25,8 @@ DATA_INGESTION_TGZ_DOWNLOAD_DIR_KEY = "tgz_download_dir"
 DATA_INGESTION_DIR_NAME_KEY = "ingested_dir"
 DATA_INGESTION_TEST_DIR_KEY = "ingested_test_dir"
 DATA_INGESTION_TRAIN_DIR_KEY = "ingested_train_dir"
+TEST_DATASET = "test.csv"
+TRAIN_DATASET = "train.csv"
 
 
 # Data validation related Variables

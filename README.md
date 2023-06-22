@@ -74,3 +74,5 @@ Real World dataset >> Pickle object of feature engineering (transform function) 
 **Data Versioning:** based on timestamp and hash file.
 
 **util.py** all the functions which support the ML pipeline. ex: yaml,pickle.
+
+**Data Drift:** When your fataset stats gets change we call it as data drift,if the data is 

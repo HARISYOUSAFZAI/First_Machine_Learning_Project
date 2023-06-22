@@ -40,7 +40,7 @@ class DataIngestion:
 
             logging.info(f"Downloading file from: [{download_url}] into: [{tgz_file_path}]")
             urllib.request.urlretrieve(download_url,housing_file_name)
-            print("1.  [download]")
+           
             logging.info(f"File: [{tgz_file_path}] has been downlaoded successfully")
 
             return tgz_file_path

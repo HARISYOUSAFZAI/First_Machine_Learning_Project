@@ -7,4 +7,5 @@ scikit-learn
 PyYAML
 six
 matplotlib
+evidently==0.2.8
 -e .
