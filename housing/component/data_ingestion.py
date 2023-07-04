@@ -74,7 +74,7 @@ class DataIngestion:
             raw_data_dir = self.data_ingestion_config.raw_data_dir
 
             file_name = os.listdir(raw_data_dir)[0]
-            print(f"2. {file_name}")
+            #print(f"2. {file_name}")
             housing_file_path = os.path.join(raw_data_dir,file_name)
             housing_data_frame = pd.read_csv(housing_file_path)
 

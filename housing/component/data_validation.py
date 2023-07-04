@@ -166,5 +166,10 @@ class DataValidation:
             )
             logging.info (f"Data_validation_artifact {data_validation_artifact}")
             
+            return data_validation_artifact
         except Exception as e:
             raise HousingException(e,sys) from e
+        
+
+    def __del__(self):
+        logging.info(f"{'='*20} Data validation log completed {'='*20}")

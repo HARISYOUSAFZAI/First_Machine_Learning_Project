@@ -45,9 +45,20 @@ DATA_TRANSFORMATION_CONGIF_KEY = "data_transformation_config"
 DATA_TRANSFORMATION_TRAIN_DIR_KEY = "transformed_train_dir"
 DATA_TRANSFORMATION_TRANSFORMED_DIR_KEY =  "transformed_dir"
 DATA_TRANSFORMATION_TEST_DIR_KEY = "transformed_test_dir"
-DATA_TRANSFORMATION_PREPORCESSED_DIR_KEY = "preprocessed_dir"
-DATA_TRANSFORMATION_PREPORCESSED_OBJECT_PATH_KEY =  "preprocessed_object_file_path"
-DATA_TRANSFORMATION_BEDROOM_PER_ROOM_KEY = "add_bedroom_per_room"
+DATA_TRANSFORMATION_PREPROCESSED_DIR_KEY = "preprocessed_dir"
+DATA_TRANSFORMATION_PREPROCESSED_OBJECT_PATH_KEY =  "preprocessed_object_file_path"
+DATA_TRANSFORMATION_ADD_BEDROOM_PER_ROOM_KEY = "add_bedroom_per_room"
+
+COLUMN_TOTAL_ROOMS = "total_rooms"
+COLUMN_POPULATION = "population"
+COLUMN_HOUSEHOLDS = "households"
+COLUMN_TOTAL_BEDROOM = "total_bedrooms"
+DATASET_SCHEMA_COLUMNS_KEY = 'columns'
+
+NUMERICAL_COLUMN_KEY = "numerical_columns"
+CATEGORICAL_COLUMN_KEY = "categorical_columns"
+
+TARGET_COLUMN_KEY = "target_column"
 
 # Model trainer related variables"
 

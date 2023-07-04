@@ -8,4 +8,5 @@ PyYAML
 six
 matplotlib
 evidently==0.2.8
+dill
 -e .

@@ -9,4 +9,5 @@ PyYAML
 matplotlib
 six
 evidently
+dill
 -e .
