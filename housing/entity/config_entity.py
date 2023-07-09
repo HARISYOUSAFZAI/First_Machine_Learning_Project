@@ -18,7 +18,7 @@ DataTransformationConfig = namedtuple("DataTransformationConfig",
 # "transformed_test_dir" (applying feature engineering on ingested test data and save it here),
 # "preprocessed_object_file_path (save all the steps of feature engineering in the form of pickle object)
 
-ModelTrainerConfig = namedtuple("ModelTrainerConfig", ["trained_model_file_path", "base_accuracy"])
+ModelTrainerConfig = namedtuple("ModelTrainerConfig", ["trained_model_file_path", "base_accuracy","model_config_file_path"])
 
 # trained_model_file_path (save the trained model which has high accuracy in the form of pickle)
 # base_accuracy (the base accuracy matrix will save here)

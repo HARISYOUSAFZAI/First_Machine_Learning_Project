@@ -6,6 +6,14 @@ import dill
 import pandas as pd
 from housing.constant import *
 
+def write_yaml_file(file_path: str,data) -> None:
+    try:
+        with open(file_path, 'wb') as yaml_file:
+            return yaml.safe_dump(data,yaml_file)
+    except Exception as e:
+        raise HousingException(e,sys) from e
+
+
 def read_yaml_file(file_path: str) -> dict:
     """
     Read a  YAML file and return the contents as a dictionary
@@ -63,7 +71,7 @@ def save_object(file_path: str, obj):
     except Exception as e:
         raise HousingException(e,sys) from e
     
-def load_obj(file_path:str):
+def load_object(file_path:str):
     """
     file_path: str
     return: object
@@ -98,3 +106,40 @@ def load_data(file_path: str, schema_file_path: str) -> pd.DataFrame:
                 
         except Exception as e:
             raise HousingException(e,sys) from e
+        
+
+
+def get_sample_model_config_yaml_file(export_dir: str):
+    try:
+        model_config = {
+            GRID_SEARCH_KEY: {
+                MODULE_KEY: "sklearn.model_selection",
+                CLASS_KEY: "GridSearchCV",
+                PARAM_KEY: {
+                    "cv": 3,
+                    "verbose": 1
+                }
+
+            },
+            MODEL_SELECTION_KEY: {
+                "module_0": {
+                    MODULE_KEY: "module_of_model",
+                    CLASS_KEY: "ModelClassName",
+                    PARAM_KEY:
+                        {"param_name1": "value1",
+                         "param_name2": "value2",
+                         },
+                    SEARCH_PARAM_GRID_KEY: {
+                        "param_name": ['param_value_1', 'param_value_2']
+                    }
+
+                },
+            }
+        }
+        os.makedirs(export_dir, exist_ok=True)
+        export_file_path = os.path.join(export_dir, "model.yaml")
+        with open(export_file_path, 'w') as file:
+            yaml.dump(model_config, file)
+        return export_file_path
+    except Exception as e:
+        raise HousingException(e, sys)
